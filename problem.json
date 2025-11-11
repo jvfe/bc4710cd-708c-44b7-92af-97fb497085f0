@@ -1,0 +1,26 @@
+{
+  "id": "bc4710cd-708c-44b7-92af-97fb497085f0",
+  "paper": "https://doi.org/10.1093/jac/dkae335",
+  "figure_reference": "Figure 2A",
+  "row": "Each row represents a unique sample with a diversity measurement.",
+  "columns": [
+    {
+      "name": "Shannon_index",
+      "type": "float",
+      "description": "Shannon diversity index."
+    },
+    {
+      "name": "Group",
+      "type": "str",
+      "description": "Group assignment (e.g., COPD, Control)."
+    }
+  ],
+  "notes": [
+    "Use the phyloSeq object",
+    "Perform rarefaction by the minimal sample depth",
+    "Estimate richness using Shannon",
+    "Calculate Shannon Evenness",
+    "Calculate the statistical difference in the diversity metric between COPD and control samples",
+    "Visualize the results using a boxplot, detailing the statistical T-test used and the obtained p-value"
+  ]
+}
