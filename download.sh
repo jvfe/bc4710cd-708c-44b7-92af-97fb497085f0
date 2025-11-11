@@ -1,0 +1,1 @@
+wget https://zenodo.org/records/10104830/files/Phyloseq_resistome_VGO_COPD.rds
