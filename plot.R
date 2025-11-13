@@ -3,7 +3,7 @@ library(dplyr)
 library(tidyr)
 library(ggsignif)
 
-plot_data <- readr::read_csv("expert_solution_extracted_with_chatgpt.csv")
+plot_data <- readr::read_csv("extracted_solution.csv")
 
 # (a) Shannon: T-test
 shannon_test <- t.test(Shannon_index ~ Group, data = plot_data)
@@ -31,5 +31,5 @@ final_figure <- p_shannon
 
 print(final_figure)
 
-ggsave("output.jpg", final_figure,
+ggsave("extracted_solution.jpg", final_figure,
       width = 4, height = 4, dpi = 300)
